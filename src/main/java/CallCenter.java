@@ -2,9 +2,9 @@ import java.util.Queue;
 import java.util.concurrent.ArrayBlockingQueue;
 
 public class CallCenter {
-    private static final int CALLS = 60;
+    private static final int CALLS = Main.CALLS;
     private static final Queue<String> phoneCalls = new ArrayBlockingQueue<>(CALLS);
-    private static final int PAUSE = 1000;
+    private static final int PAUSE = 3000;
     public static final int ANSWER = 3000;
 
     public void call(){
